@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testcopydatafactory01"
+		},
+		"blobcopytest01_connectionString": {
+			"value": ""
+		},
+		"ls_desti_dl_accountKey": {
+			"value": ""
+		},
+		"ls_sql_connection_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqlservertest001.database.windows.net;Initial Catalog=AzureSQLdatbas01"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://azurekeyvaulttest1.vault.azure.net/"
+		},
+		"LS_HTTP_single_file_breast_cancer_01_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com"
+		},
+		"ls_desti_dl_properties_typeProperties_url": {
+			"value": "https://datalakergtest01.dfs.core.windows.net/"
+		},
+		"ls_sqltable_properties_typeProperties_connectionString_secretName": {
+			"value": "SqlConnectionAuthentication01"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
