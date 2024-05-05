@@ -1,0 +1,38 @@
+{
+	"name": "SourceDataset_rk9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobcopytest01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "sales fact",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Dataset-Sales and Marketing Sample.xlsx",
+				"container": "testcontainer01"
+			},
+			"firstRowAsHeader": false
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

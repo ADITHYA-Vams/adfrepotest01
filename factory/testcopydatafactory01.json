@@ -1,0 +1,9 @@
+{
+	"name": "testcopydatafactory01",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "737a5dd4-5636-44b2-a289-8510442533a5",
+		"tenantId": "96b5396f-cfab-4b10-9fc5-64b20af89867"
+	}
+}

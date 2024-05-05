@@ -1,0 +1,23 @@
+{
+	"name": "http_to_csv_single_breast_cancer_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_single_file_breast_cancer_01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "ADITHYA-Vams/files/main/breast-cancer-wisconsin-data.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
